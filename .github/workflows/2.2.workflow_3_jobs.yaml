@@ -1,0 +1,30 @@
+name: "My workflow with 3 jobs"
+on:
+  push: # executed on all push
+jobs:
+  first job: # first job declaration
+    name: "Job 1"
+    runs-on: ubuntu-latest
+    steps:
+    # The following step execute a shell script
+      - name: "Job 1"
+        run: |
+          echo "Ceci est le premier job"
+
+  Second job: # Second job declaration
+    name: "Job 2"
+    runs-on: ubuntu-latest
+    steps:
+    # The following step execute a shell script
+      - name: "Job 2"
+        run: |
+          echo "Ceci est le deuxième job"
+
+  Third job: # Third job declaration
+    name: "Job 3"
+    runs-on: ubuntu-latest
+    steps:
+    # The following step execute a shell script
+      - name: "Job 3"
+        run: |
+          echo "Ceci est le troisième job"
