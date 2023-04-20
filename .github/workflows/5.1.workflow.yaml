@@ -2,7 +2,7 @@ name: Mon workflow
 on:
   push:
     branches: [main]
-
+  
 jobs:
   information_display:
     runs-on: ubuntu-latest
